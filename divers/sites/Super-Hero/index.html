@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MMI game !</title>
+
+
+    <script src="libraries/easeljs-0.8.2.min.js"></script>
+    <script src="libraries/tweenjs-0.6.2.min.js"></script>
+    <script src="libraries/soundjs-0.6.2.min.js"></script>
+    <script src="libraries/preloadjs-0.6.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css' />
+    <link href='../../typo/Dragon%20is%20coming.otf' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="../../style/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Josefin+Sans:100,400|Lato:100|Open+Sans+Condensed:300|PT+Sans+Narrow|Quicksand|Raleway" rel="stylesheet">
+    <style>
+
+        @font-face {
+            font-family: 'bowlby_oneregular';
+            src: url('assets/fonts/bowlbyone-regular-webfont.woff2') format('woff2'),
+            url('assets/fonts/bowlbyone-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        #mmigame{
+            background:url(assets/bg.jpg);
+            background-size: cover;
+            margin-top: 10vh;
+            border: 2px solid darkgrey;
+            margin-left: 6vh;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titre"> Jeu de Super-Hero en Flash sans Flash</h1>
+    <div id="jeu">
+        <canvas id="mmigame" width="800" height="500">
+            Navigateur trop ancien pour jouer !
+        </canvas>
+        <p class="textNoInd"><strong>Année :</strong> 2017
+        <br /><br />
+        <strong>Circonstances :</strong> Exercice
+        <br /><br />
+        <strong>Languages :</strong> HTML5 / JS
+        <br /><br />
+        <strong>Détails :</strong> Travail réalisé en cours. Le but étant de créer un jeu de tir aver compteur et page d'accueil.
+        </p>
+    </div>
+    <script src="utils.js"></script>
+    <script src="game-assets.js"></script>
+    <script src="game.js"></script>
+    <script>
+        initGame();
+    </script>
+
+</body>
+</html>

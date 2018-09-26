@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuisine-facile : l'élément indispensable</title>
+        <meta charset="UTF-8">
+        <link href="css/styles2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+        <script type="application/javascript" src='JS/jquery-3.1.1.min.js'></script>
+        <script type="application/javascript" src='JS/bootstrap.min.js'></script>
+    </head>
+    
+    <body>
+        
+        <header class="header" id="main-header">
+            <a class="header-logo" href="#" target="_blank">
+                <img src="images/LOGO final.png" id="logo" alt="cuisinie facile logo" width="300px">
+            </a>
+            
+            <!--caroussel-->
+            
+                            <div id = "myCarousel" class = "carousel slide">
+                
+                <!-- Indicateurs pour caroussel -->
+                <ol class = "carousel-indicators">
+                    <li data-target = "#myCarousel" data-slide-to = "0" class ="active"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                </ol>
+                
+                <!-- Mise en place du contenu pour le Caroussel -->
+                <div class = "carousel-inner">  
+                    <div class = "item active">
+                        <img src = "images/header/dej.jpg" alt = "déjeuné" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src = "images/header/fish.jpg" alt = "poisson" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="images/header/greg.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div>                  
+                </div>
+                
+                <!-- Contrôles du Caroussel -->
+                <a class = "carousel-control left" href = "#myCarousel" role="button" data-slide = "prev">
+                    <span class = "icon-prev"></span>
+                </a>
+                
+                <a class = "carousel-control right" href = "#myCarousel" role="button" data-slide = "next">
+                    <span class = "icon-next"></span>
+                </a>
+            </div>
+            
+            
+            <nav class="header-menu">
+                <div id="header-m">
+                    <a href="#" title="Accueil" target="_blank">Accueil</a>
+                    <a href="#" title="Recettes" target="_blank">Recettes</a>
+                    <a href="#" title="Themes" target="_blank">Thèmes</a>
+                    <a href="#" title="Autres" target="_blank">Autres</a>
+                </div>
+            </nav>
+        
+        </header>
+        
+        
+        <div class="recherche_p">
+                <form action="recherche" id="searchthis" method="get">
+                    <input id="search" name="q" type="text" placeholder="  Rechercher" />
+                    <input class="loupe" type="submit" value=" " />
+                </form>
+            </div>
+        
+        
+        <div id="content">
+            
+            <img src="images/crepe.jpg" id="crepes"/>
+            
+            <p id="nom_recette">Crêpes</p> <!-- à replacer par-dessus l'image-->
+            
+            <div id="ingredients">
+                
+                <p class="petit_titre">Ingrédients<br />
+                (4 personnes)</p>
+                <br />
+                <p>500g de farine<br />
+                1L de lait<br />
+                4 oeufs<br />
+                2 sachets de sucre vanillé<br />
+                2 cuillère à soupe d'huile<br />
+                sucre à volonté<br />
+                1 pincée de sel<br />
+                1 jus de citron (optionnel)</p>
+                
+            </div>
+            
+            <img src="images/dot.png" class="point" alt="point" width="50">
+            
+            <div id="recette_comp">
+            
+                <p class="petit_titre">étape 1</p>
+                <p>Mélanger l'ensemble des ingrédients et déliez la pâte en faisant en sorte d'obrtenir un résultat homogène et donc sans grumeaux.</p> <br />
+
+                <p class="petit_titre">étape 2</p>
+                <p>Verser une petite louche de pâte dans une poêle beurrée et laissez cuire jusqu'à ce que le dessous de la crêpe commence à dorer.</p> <br />
+
+                <p class="petit_titre">étape 3</p>
+                <p>Retourner la crêpe et répéter l'étape précèente.</p> <br />
+
+                <p class="petit_titre">étape 4</p>
+                <p>Répéter les étapes 2 et 3 pour le reste de la pâte à crêpes.</p> <br />
+
+                <p class="petit_titre">étape 5</p>
+                <p>Manger les crêpes, seules ou accompagnées, assaisonées de sucre (ou miel, ssirop d'érable, confiture, sucre glace, chantilly...)</p>
+                
+            </div>
+            
+            <img src="images/dot.png" class="point" alt="point" width="50">
+            
+            <div id="form">
+                <textarea placeholder="Bonjour,
+Tout comme Mireille, avant de tester votre recette je mettais 6 oeufs dans ma pâte à crêpes.
+Le problème arrive juste maintenant : faisant de délicieuses crêpes en permanence, j'en propose à mon nouveau conjoint.
+Nous mangeons donc dans la joie et la bonne humeur autour d'une bonne bière avec des crêpes au Nutella.
+Le scandale démarre car il est contre l'industrie du Nutella, qui selon lui est mauvaise pour l'image de l'huile de palme. BREF.
+Je me demandais comment mettre fin à cette conversation.
+Quelle fût ma surprise quand je découvrit qu'il était allergique aux oeufs !
+Dieux merci, il a arrêté de parlé, dommage qu'il y ait laissé sa vie.
+Paix à ton âme Césarienne...
+" class="texte_ar"></textarea>
+                <a href="#" id="tomate">Poster</a><br /><br />
+            </div>
+            
+            
+            <div id="titre_sec"><p>Commentaires :</p></div>
+            
+            <div class="espace_comm">
+            
+                <div class="pseudo">
+                    <img src="images/avatar_1.jpg" alt="avatar" class="avatar" width="100px" />
+                    <a href="#">Mireille Lol</a>
+                </div>
+
+                <div class="comm">
+                    <p>Bonjour, <br /> Avant de tester votre recette, je mettais 6 oeufs dans ma pâte à crêpes. Merci beaucoup pour cette recette, grâce à elle je peux gaver mes enfants ainsi que mon mari. Leurs nuits qui débutes tôt me permettent enfin d'avoir des soirées tranquilles : bière et séries.</p>
+                </div>
+                
+            </div>
+            
+            <div class="espace_comm">
+
+                <div class="pseudo">
+                    <img src="images/avatar_2.jpg" alt="avatar" class="avatar" width="100px" />
+                    <a href="#">Césarienne Mdr</a>
+                </div>
+
+                <div class="comm">
+                    <p>Wesh la mif ! <br />C'est un de ces scandales de pas connaître la recette de pâte à crêpes !</p>
+                </div>
+                
+            </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        <footer id="lefooter">
+            
+            <div id="colonne-gauche">
+                <p>Contacts</p>
+                <ul id="imagesreseaux">
+                    <li><img src="images/facebook.png" width="30px"/></li>
+                    <li><img src="images/googleplus.png" width="30px"/></li>
+                    <li><img src="images/instagram.png" width="30px"/></li>
+                    <li><img src="images/pinterest.png" width="30px"/></li>
+                    <li><img src="images/twitter.png" width="30px"/></li>
+                </ul>
+                <!--ICONNES RESEAUX SOCIAUX-->
+            </div>
+            
+            <div id="colonne-centre">
+                <a href="#" title="bonnesadresses" target="_blank">Bonnes adresses</a>
+                <a href="#" title="plandusite" target="_blank">Plan du site</a>
+                <a href="#" title="livrerecettes" target="_blank">Livre des recettes</a>
+                <a href="#" title="fluxrss" target="_blank">Flux RSS</a>
+            </div>
+            
+            <div id="colonne-droite">
+                <a href="#" title="codeco" target="_blank">Connexion/Déconnexion</a>
+                <a href="#" title="inscription" target="_blank">Inscription</a>
+            </div>
+            
+        </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cosmo : portraits de femme</title>
+
+    <!-- meta utile pour ne pas devoir encoder les accents ... -->
+    <meta charset="UTF-8">
+
+    <!-- on va s'appuyer sur un bootstrap lite -->
+
+    <!-- et voila nos styles -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- on charge des typos de google -->
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- quand on parle de responsive, le viewport c'est la base ! -->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--balise obligatoire pour avoir un site mobile-->
+
+</head>
+
+<body>
+
+    <!-- l'id #main-header nous servira surtout pour ouvrir/fermer le menu avec :target -->
+    <header class="header" id="main-header">
+
+        <a class="header-logo" href="#" target="_blank">
+            <img src="images/logo.png" width="200" alt="Cosmopolitan Logo">
+        </a>
+
+        <div class="header-toogle">
+            <a href="#main-header" class="header-toogle-open"><img src="images/menu.png" width="30" alt="Ouvrir Menu"></a>
+            <a href="#" class="header-toogle-close"><img src="images/menu-close.png" width="30" alt="Fermer Menu"></a>
+        </div>
+
+        <nav class="header-menu">
+            <a href="#" title="Dossier du mois" target="_blank">Dossier du mois</a>
+            <a href="#" title="Tendance" target="_blank">Tendance</a>
+            <a href="#" title="Fashion week" target="_blank">Fashion week</a>
+            <a href="#" title="Chaussures" target="_blank">Chaussures</a>
+            <a href="#" title="Bons plans" target="_blank">Bons plans</a>
+            <a href="#" title="Abonnement" target="_blank">Abonnement</a>
+        </nav>
+
+    </header>
+
+
+
+
+    <section class="banner">
+
+        <div class="banner-desc">
+            <h1 class="title-like">Femmes d'hier et d'aujourd'hui</h1>
+            <a class="btn btn-white" href="#" title="Notre dossier du mois">Notre dossier du mois &raquo;</a>
+        </div>
+
+        <div class="banner-video">
+            <!-- en HTML5 il est possible de lire de la video, certains attributs permettent de la controler plus efficacement -->
+            <!-- l'atribut playsinline est tout recent, et permet à IOS de lire la video en fond sans lancer le player video plein écran -->
+            <video muted loop autoplay playsinline>
+                <source src="http://demo.prognplay.com/mmi/html-s3/video-cosmo.mp4" type="video/mp4">
+                <!--liens différents selon les navigateurs-->
+                <source src="http://demo.prognplay.com/mmi/html-s3/video-cosmo.webm" type="video/webm">
+                <source src="http://demo.prognplay.com/mmi/html-s3/video-cosmo.ogv" type="video/ogg">
+            </video>
+        </div>
+
+        <!-- fond semi opaque noir au dessus de la video -->
+        <div class="banner-video-overlay"></div>
+
+    </section>
+
+
+
+    <section class="short-text">
+        <p>
+            <strong>Les femmes d’aujourd’hui nous inspirent.</strong>
+            <br />Elles sont élégantes. Elles sont sensuelles.<strong> Elles sont libres !</strong>
+            <br>Elles assument les années, leur corps, leurs envies.
+            <br>Elles ont encore beaucoup de rêves à acomplir et beaucoup à offrir.
+            <br />L'épanouissement passe par leur féminité, mais surtout <strong>leurs passions</strong>
+            <br>Découvrez les portraits et les styles des femmes d'aujourd'hui.
+        </p>
+    </section>
+
+
+    <section class="container-fluid three-women">
+        <div class="row">
+
+            <a href="#" class="col-sm-4 three-women-item">
+                <figure class="effect-img">
+                    <img src="images/wom1.png" alt="Photographie de Sophie">
+                    <figcaption>
+                        <h3 class="title-like hidden-sm">"La mode ?<br>C'est mon job&nbsp;!"</h3>
+                        <span class="btn btn-white">Confidences de Sophie</span>
+                    </figcaption>
+                </figure>
+            </a>
+
+            <a href="#" class="col-sm-4 three-women-item">
+                <figure class="effect-img">
+                    <img src="images/wom2.png" alt="Photographie de Claire">
+                    <figcaption>
+                        <h3 class="title-like hidden-sm">"Je vis grâce<br />à ma passion&nbsp;!"</h3>
+                        <span class="btn btn-white">Confidences de Claire</span>
+                    </figcaption>
+                </figure>
+            </a>
+
+            <a href="#" class="col-sm-4 three-women-item">
+                <figure class="effect-img">
+                    <img src="images/wom3.png" alt="Photographie d'Elise">
+                    <figcaption>
+                        <h3 class="title-like hidden-sm">"Oublier mes rêves,<br> moi&nbsp;? Jamais&nbsp;!"</h3>
+                        <span class="btn btn-white">Confidences de d'Elise</span>
+                    </figcaption>
+                </figure>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="short-text">
+        <p>
+            <strong>Etre chic à tout âge, c'est le crédo d'Hélène.</strong>
+            <br />Découvrez son portrait et son style et faîtes le plein de bons plans mode avec elle !
+            <br>Rejoignons-la en pleine séance photo...
+        </p>
+    </section>
+
+
+
+    <section class="confidence container-fluid">
+
+        <div class="confidence-item row">
+
+            <div class="confidence-intro col-md-4 col-sm-6">
+                <!--               <h3>Hélène so Chic</h3>-->
+                <h2 class="title-like">Tricher,<br>moi&nbsp;? Jamais&nbsp;!</h2>
+                <p>“J'ai toujours voulu m'affirmer. Mon job, et mes enfants ont réussis à faire de moi la femme que je voulais être. Le parcours a été dur, mais ca en valait la peine...”</p>
+                <a href="#" class="link">Découvrir ses confidences</a>
+                <a class="btn btn-white visible-sm-inline-block visible-xs-inline-block" href="#">Découvrir son style</a>
+            </div>
+
+            <div class="confidence-produits col-md-5 col-sm-6">
+                <img class="confidence-visuel" src="images/confidence-helene.png" alt="Visuel Hélène">
+
+                <!--
+          <div class="confidence-prix">
+    <img class="fleche-g " src="images/confidence-fleche.png" alt="Flèche gauche">
+    <span class="designation">Pantalon</span>
+    <span class="prix"><span>A partir de</span>49,95€</span>
+    <a class="btn btn-white hidden-sm hidden-xs" href="#">Découvrir son style</a>
+</div>
+-->
+            </div>
+
+            <div class="confidence-decor col-md-3 hidden-sm">
+                <img src="images/confidence-appareil-photo.png" alt="Elément de décor">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="tendances">
+        <div class="tendances-item tendances-txt">
+            <h3 class="title-like">Back to basics...</h3>
+            <p>Donec velit eros, molestie eu elit at, ultrices congue est. Fusce vehicula efficitur erat, sagittis tristique magna porta nec. Cras at dui pharetra, molestie elit sed, mollis mi. Proin <a href="#">consectetur maximus</a> odio, eu finibus lacus commodo eget. Nunc congue aliquam ipsum, quis pharetra quam eleifend in. Mauris fermentum ligula non tempus facilisis. Etiam <strong>consectetur a odio</strong> vel ornare. Maecenas vel quam porta, pulvinar quam sed, cursus metus. Quisque justo odio, sodales vel elit et, scelerisque vehicula est. Nam et risus semper orci rutrum vestibulum. Ut quis nisl scelerisque dolor facilisis pulvinar et vitae elit.</p>
+            <br />
+            <a class="btn btn-grey" href="#" title=" ">En savoir plus &raquo;</a>
+        </div>
+        <div class="tendances-item tendances-img" style="background-image:url(images/tendances-converse.jpg)">
+            <span>Jeans Converse, reste tendance en 2017</span>
+        </div>
+    </section>
+
+
+
+    <section class="tendances tendances-inverse">
+        <div class="tendances-item tendances-txt">
+            <h3 class="title-like">...Et retour aux sources</h3>
+            <p>Donec velit eros, molestie eu elit at, ultrices congue est. Fusce vehicula efficitur erat, sagittis tristique magna porta nec. Cras at dui pharetra, molestie elit sed, mollis mi. Proin <a href="#">consectetur maximus</a> odio, eu finibus lacus commodo eget. Nunc congue aliquam ipsum, quis pharetra quam eleifend in. Mauris fermentum ligula non tempus facilisis. Etiam <strong>consectetur a odio</strong> vel ornare. Maecenas vel quam porta, pulvinar quam sed, cursus metus. Quisque justo odio, sodales vel elit et, scelerisque vehicula est. Nam et risus semper orci rutrum vestibulum. Ut quis nisl scelerisque dolor facilisis pulvinar et vitae elit.</p>
+            <br />
+            <a class="btn btn-grey" href="#" title=" ">En savoir plus &raquo;</a>
+        </div>
+        <div class="tendances-item tendances-img" style="background-image:url(images/tendances-yoga.jpg)">
+            <span>Respirez, prenez le temps pour vous en 2017</span>
+        </div>
+    </section>
+
+
+
+    <section class="short-text">
+        <p>
+            Nunc congue aliquam ipsum, quis pharetra quam eleifend in. Mauris fermentum ligula non tempus facilisis. Etiam consectetur a odio vel ornare. Maecenas vel quam porta, pulvinar quam sed, cursus metus. Quisque justo odio, sodales vel elit et, scelerisque vehicula est.
+        </p>
+    </section>
+
+
+
+
+    <section class="articles container">
+
+        <h4 class="title-like">Nos derniers articles</h4>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">25 Octobre</span>
+                    <span class="articles-title">Que faire de votre RSA ? Notre sélection mode à 535,17€</span>
+                    <div class="articles-img">
+                        <img src="images/article1.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">18 Octobre</span>
+                    <span class="articles-title">Beauté : 5 gestes pour être sûre d’être en retard tous les matins</span>
+                    <div class="articles-img">
+                        <img src="images/article2.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">12 Octobre</span>
+                    <span class="articles-title">5 conseils pour bien lâcher votre copine avec qui vous deviez aller courir</span>
+                    <div class="articles-img">
+                        <img src="images/article3.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">7 Octobre</span>
+                    <span class="articles-title">Notre test : Vérifiez que vous êtes bien plus moche qu'Emma Watson</span>
+                    <div class="articles-img">
+                        <img src="images/article4.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">6 Octobre</span>
+                    <span class="articles-title">Peut-on avoir 35 ans, être sans enfant et mériter de vivre ?</span>
+                    <div class="articles-img">
+                        <img src="images/article5.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <span class="articles-date">3 Octobre</span>
+                    <span class="articles-title">Ces photos de stars de la chanson quand elles étaient déjà stars de la chanson</span>
+                    <div class="articles-img">
+                        <img src="images/article6.jpg" />
+                        <span class="articles-over"><span class="title-like">Lire l'article</span></span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="clearfix bons-plans">
+        <h2 class="title-like">Manquer un bon plan, moi&nbsp;? jamais&nbsp;!</h2>
+
+        <!-- le champ de type email permet aux mobiles de montrer le clavier de saisie d'email directement -->
+        <form method="post" action="monsite.com/souscription.php" class="clearfix">
+            <p><strong>Pour 30 euros d'achat dans nos magasins partenaires</strong>
+                <br>en vous inscrivant à la newsletter
+                <br>aujourd'hui&nbsp;!</p>
+            <input name="mon_email" type="email" value="" placeholder="votre@mail.com">
+            <input class="btn btn-black" type="submit" value="S'inscrire" />
+        </form>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <p>Suivez nous sur
+            <br />les réseaux sociaux !</p>
+        <div class="footer-socials">
+            <!-- .text-hide est utilise pour avoir un texte lisible par les lecteurs d'ecran, mais pas visible -->
+            <a id="btn-fb" href="#" target="_blank"><span class="text-hide">Notre page Facebook</span></a>
+            <a id="btn-tw" href="#" target="_blank"><span class="text-hide">Notre page Twitter</span></a>
+            <a id="btn-yt" href="#" target="_blank"><span class="text-hide">Notre chaine Youtube</span></a>
+            <a id="btn-it" href="#" target="_blank"><span class="text-hide">Notre profil Instagram</span></a>
+            <a id="btn-tu" href="#" target="_blank"><span class="text-hide">Notre page Tumblr</span></a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

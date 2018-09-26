@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuisine-facile : l'élément indispensable</title>
+        <meta charset="UTF-8">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+        <script type="application/javascript" src='JS/jquery-3.1.1.min.js'></script>
+        <script type="application/javascript" src='JS/bootstrap.min.js'></script>
+    </head>
+    
+    <body>
+        
+        <header class="header" id="main-header">
+            <a class="header-logo" href="#" target="_blank">
+                <img src="images/LOGO final.png" id="logo" alt="cuisinie facile logo" width="300px">
+            </a>
+            
+            <!--caroussel-->
+            
+                            <div id = "myCarousel" class = "carousel slide">
+                
+                <!-- Indicateurs pour caroussel -->
+                <ol class = "carousel-indicators">
+                    <li data-target = "#myCarousel" data-slide-to = "0" class ="active"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                </ol>
+                
+                <!-- Mise en place du contenu pour le Caroussel -->
+                <div class = "carousel-inner">  
+                    <div class = "item active">
+                        <img src = "images/header/dej.jpg" alt = "déjeuné" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src = "images/header/fish.jpg" alt = "poisson" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="images/header/greg.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div>                  
+                </div>
+                
+                <!-- Contrôles du Caroussel -->
+                <a class = "carousel-control left" href = "#myCarousel" role="button" data-slide = "prev">
+                    <span class = "icon-prev"></span>
+                </a>
+                
+                <a class = "carousel-control right" href = "#myCarousel" role="button" data-slide = "next">
+                    <span class = "icon-next"></span>
+                </a>
+            </div>
+            
+            
+            <nav class="header-menu">
+                <div id="header-m">
+                    <a href="#" title="Accueil" target="_blank">Accueil</a>
+                    <a href="#" title="Recettes" target="_blank">Recettes</a>
+                    <a href="#" title="Themes" target="_blank">Thèmes</a>
+                    <a href="#" title="Autres" target="_blank">Autres</a>
+                </div>
+            </nav>
+        
+        </header>
+        
+            <div class="recherche_p">
+                <form action="recherche" id="searchthis" method="get">
+                    <input id="search" name="q" type="text" placeholder="  Rechercher" />
+                    <input class="loupe" type="submit" value=" " />
+                </form>
+            </div>
+        
+            
+        <div id="content">
+            
+                <p class="titre_cat">
+                    <strong>Présentation</strong>
+                </p>
+                    
+            <section id="texte-court">
+                
+                <p>
+                    <br />Vous cherchez à cuisiner facilement ? Des recettes simples et bien expliquées ? Vous êtes sur le bon site !
+                    <br />Toutes les recettes que vous trouverez ici ont été pensées pour être faciles à réaliser : <strong>chaque étape</strong> fait l'objet d'<strong>une photo</strong>, elle est accompagnée d'explications détaillées, <strong>sans jargon</strong> ni termes de professionnels qui ne soient expliqués.
+                    <br />Cette forme : chaque étape de recette = une grande photo + des explications, est un des atouts de cuisine-facile.com, et j'ai apporté un grand soin à la rédaction pour rendre les <strong>recettes compréhensibles</strong> et faciles à faire, même pour un(e) débutant(e).
+                </p>
+            </section>
+            
+            <section class="titre-recette">
+                
+                <p class="titre_cat">
+                    <strong>Recette de la semaine</strong>
+                </p>
+                    <a href="indexpage2.html"> <img src="images/reccette semaine/pancakes_rog.png" id="recettesemaine" alt="recette semaine"></a>
+            </section>
+            
+            <img src="images/dot.png" id="point" alt="point" width="50">
+            
+            <section class="titre-recette">
+                <p class="titre_cat">
+                    <strong>Nouvelles recettes</strong>
+                </p>
+                    <!--caroussel-->
+            
+                            <div id = "myCarousel2" class = "carousel slide">
+                
+                <!-- Indicateurs pour caroussel -->
+                <ol class = "carousel-indicators">
+                    <li data-target = "#myCarousel2" data-slide-to = "0" class ="active"></li>
+                    <li data-target = "#myCarousel2" data-slide-to = "1"></li>
+                    <li data-target = "#myCarousel2" data-slide-to = "2"></li>
+                    <li data-target = "#myCarousel2" data-slide-to = "3"></li>
+                    <li data-target = "#myCarousel2" data-slide-to = "4"></li>
+                    <li data-target = "#myCarousel2" data-slide-to = "5"></li>
+                </ol>
+                
+                <!-- Mise en place du contenu pour le Caroussel -->
+                <div class = "carousel-inner">  
+                    <div class = "item active">
+                        <img src = "images/nouvelles recettes/blanquette.jpg" alt = "déjeuné" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src = "images/nouvelles recettes/gateau cafe.jpg" alt = "poisson" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="images/nouvelles recettes/gateau chocolat.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="images/nouvelles recettes/gateau framboise.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div> 
+                    
+                    <div class="item">
+                        <img src  ="images/nouvelles recettes/moules frites.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="images/nouvelles recettes/pates saumon.jpg" alt = "greg" class = "img-responsive" width="100%">
+                    </div>
+                </div>
+                
+                <!-- Contrôles du Caroussel -->
+                <a class = "carousel-control left" href = "#myCarousel2" role="button" data-slide = "prev">
+                    <span class = "icon-prev"></span>
+                </a>
+                
+                <a class = "carousel-control right" href = "#myCarousel2" role="button" data-slide = "next">
+                    <span class = "icon-next"></span>
+                </a>
+            </div>
+
+            </section>
+            
+             <img src="images/dot.png" id="point" alt="point" width="50">
+                
+            <div id="butts">
+                <div id="butt_insc">
+                    <a href="#" title="inscription" target="_blank">Inscription</a>
+                </div>
+                <div id="butt_connex">
+                    <a href="#" title="connexion" target="_blank">Connexion</a>
+                </div>
+            </div>
+                
+        </div>
+        
+        
+        <footer id="lefooter">
+            
+            <div id="colonne-gauche">
+                <p id="lecontact">Contacts</p>
+                <ul id="imagesreseaux">
+                    <li><img src="images/facebook.png" width="30px"/></li>
+                    <li><img src="images/googleplus.png" width="30px"/></li>
+                    <li><img src="images/instagram.png" width="30px"/></li>
+                    <li><img src="images/pinterest.png" width="30px"/></li>
+                    <li><img src="images/twitter.png" width="30px"/></li>
+                </ul>
+                <!--ICONNES RESEAUX SOCIAUX-->
+            </div>
+            
+            <div id="colonne-centre">
+                <a href="#" title="bonnesadresses" target="_blank">Bonnes adresses</a>
+                <a href="#" title="plandusite" target="_blank">Plan du site</a>
+                <a href="#" title="livrerecettes" target="_blank">Livre des recettes</a>
+                <a href="#" title="fluxrss" target="_blank">Flux RSS</a>
+            </div>
+            
+            <div id="colonne-droite">
+                <a href="#" title="codeco" target="_blank">Connexion/Déconnexion</a>
+                <a href="#" title="inscription" target="_blank">Inscription</a>
+            </div>
+            
+        </footer>
+    
+    </body>
+</html>
